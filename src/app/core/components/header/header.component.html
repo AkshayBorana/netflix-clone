@@ -1,0 +1,23 @@
+<header class="bg-main sticky top-0 dark-nav flex justify-between px-10 items-center">
+  <!-- Logo + Nav items -->
+  <div class="flex h-full gap-5">
+    <img width="110" src='src/app/assets/netflix-logo-icon.svg' alt="Netflix logo">
+    <ul class="flex items-center gap-5">
+      @for(navItem of navList; track navItem.id) {
+      <li class="text-neutral-200 cursor-pointer text-sm font-extralight hover:text-grey-400 transition-[1s]">{{
+        navItem.label }}</li>
+      }
+    </ul>
+  </div>
+
+  <!-- Welcome user | profile image | signout button -->
+  <div class="text-white flex items-center gap-4">
+    <div class="flex items-center">
+      <a href="/" class="px-4"><span>Welcome <strong>Akshay</strong></span></a>
+      <img src="" alt="User image" width="42">
+    </div>
+    &nbsp; | &nbsp;
+    <a href="/">Sign Out</a>
+  </div>
+
+</header>
