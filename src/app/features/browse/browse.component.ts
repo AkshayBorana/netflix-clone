@@ -1,9 +1,9 @@
 import { Component, computed, inject, OnInit, signal } from '@angular/core';
 import { HeaderComponent } from '../../core/components/header/header.component';
 import { BannerComponent } from '../../core/components/banner/banner.component';
-import { MovieService } from '../../shared/services/movie.service';
 import { MovieCarouselComponent } from '../../shared/components/movie-carousel/movie-carousel.component';
 import { MovieList } from '../../core/models/movies.interface';
+import { MovieService } from '../../shared/services/videos.service';
 
 // const components = [HeaderComponent, BannerComponent, MovieCarouselComponent];
 @Component({
