@@ -9,16 +9,17 @@ import {
 import { MovieList } from '../../../core/models/movies.interface';
 // import {input} from '@angular/core`;
 import { Swiper } from 'swiper';
+import { ClipTextPipe } from '../../pipes/clip-text.pipe';
 
 @Component({
   selector: 'app-movie-carousel',
   templateUrl: './movie-carousel.component.html',
   styleUrls: ['./movie-carousel.component.scss'],
-  standalone: true,
+  imports: [ClipTextPipe]
 })
 export class MovieCarouselComponent implements OnInit, AfterViewInit {
   videoContents = input<MovieList[]>();
-  title = input('');
+  title = input<string>('');
   selectedContent: any;
   image = 'movie not found';
 

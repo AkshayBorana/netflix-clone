@@ -9,7 +9,7 @@
           <!-- @if((movie.title === this.selectedContent)) { -->
           <div class="desc p-2">
             <span class="text-base flex flex-wrap font-bold">{{movie.original_title}}</span>
-            <p class="text-xs my-3">{{movie.overview}}</p>
+            <p class="text-xs my-3">{{movie.overview | clipText}}</p>
             <div class="py-3 absolute w-[90%] bottom-1">
               <p class="text-xs flex justify-between items-center">
                 <span class="text-green-500">Vote Average : {{movie.vote_average}}</span>
