@@ -4,7 +4,7 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'clipText',
 })
 export class ClipTextPipe implements PipeTransform {
-  transform(value: string): string {
-    return value.substring(0, 140);
+  transform(value: string, args: number): string {
+    return `${value.substring(0, args)}...`;
   }
 }
